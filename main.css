@@ -1,3 +1,42 @@
-h1 {
-  color: red;
+.container {
+  height: 100vh;
+  position: relative;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
+
+h1 {
+  color: #53e953;
+  letter-spacing: .5rem;
+}
+
+h1:hover {
+  color: blue;
+  -webkit-transition: move 5s ease;
+  transition: move 5s ease;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 1000px;
+    left: 0px;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 1000px;
+    left: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
